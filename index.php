@@ -27,7 +27,7 @@ if (isset($update)) {
         @$caption = $message->caption;
         //file id
         @$sticker_id = $message->sticker->file_id;
-        @$photo_id = $message->photo[count($message->photo) - 1]->file_id;
+    
         @$video_id = $message->video->file_id;
         @$voice_id = $message->voice->file_id;
         @$file_id = $message->document->file_id;
